@@ -1,0 +1,231 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* navigation section */
+nav {
+  width: 100%;
+ /* background-color: grey; */
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 2px 4px 10px 2px #343434;
+  /* margin-bottom: 2px; */
+}
+
+#title {
+  font-size: 1.8rem;
+  font-weight: 1000;
+  color: orange;
+}
+
+#home-page-link{
+  text-decoration: none;
+  color: orange;
+  transition: all 0.5s ease-in-out;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+#home-page-link:hover{
+  color: red;
+}
+
+#favorite-meals-link {
+  text-decoration: none;
+  color: orange;
+  transition: all 0.5s ease-in-out;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+#favorite-meals-link:hover {
+  color: red;
+}
+
+/* Main section */
+main {
+  height: 90vh;
+  width: 100%;
+  background-color: grey;
+  /* background-color: ; */
+}
+
+/* search container section */
+.search-container {
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+
+#search-meal-input{
+  width: 30vw;
+  padding: 8px 10px;
+  font-size: 1.1rem;
+  border: 1.5px solid orange;
+  color: orange;
+  font-family: sans-serif;
+  border-radius: 25px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+#search-meal-input::placeholder{
+  color: orange;
+}
+
+#search-button {
+  padding: 10px 10px;
+  border: 1.5px solid orange;
+  /* color: orange; */
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* for meal and favourite section */
+#meal,
+#favourite-meals-container {
+  width: 100%;
+  height: auto;
+  overflow-y: scroll;
+  background-color: rgb(37, 36, 36);
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 4px 10px 1px orange;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.meal-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 30px;
+  width: 50%;
+  height: 66vh;
+  background-color: whitesmoke;
+  box-shadow: 2px 4px 15px 4px grey ;
+}
+
+.meal-img {
+  position: relative;
+}
+
+.meal-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: auto;
+}
+
+.meal-name {
+  text-align: center;
+  height: 100px;
+  font-size: 0.8rem;
+}
+
+.meal-name h3 {
+  font-size: 1.1rem;
+  margin: 5% 0;
+  color: orange;
+}
+
+.meal-name a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 10px;
+  color: rgb(135, 35, 35);
+  text-decoration: underline;
+}
+
+.favourite-button{
+  border: 1px solid black;
+  box-shadow: 2px 4px 10px 2px grey ;
+}
+
+.favourite-button i{
+  /* font-size: 10px; */
+  color: red;
+
+}
+
+.favourite-button,
+.unfavourite-button,
+.added-button {
+  margin: 4%;
+}
+
+
+.unfavourite-button{
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  box-shadow: 2px 4px 10px 2px grey ;
+}
+
+/* Meal Details section */
+
+#meal-details {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: orange;
+  border-radius: 10px;
+  width: 60%;
+  height: 95%;
+  overflow-y: scroll;
+  display: none;
+  padding: 2rem 0;
+  background-color: whitesmoke;
+  padding: 20px;
+  box-shadow: 2px 4px 10px 2px grey;
+}
+
+.show-recipe {
+  /* important used here to display the details page */
+  display: block !important;
+}
+
+.back-button {
+  margin-bottom: 20px;
+}
+
+.recipe-title {
+  letter-spacing: 1px;
+  padding-bottom: 1rem;
+  color: grey;
+  font-weight: 500;
+}
+
+.recipe-meal-img img {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.recipe-link {
+  margin: 1.4rem 0;
+  text-align: center;
+}
+.recipe-link a {
+  color: blue;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: all 0.2s linear;
+  text-decoration: none;
+}
+.recipe-link a:hover {
+  color: orange;
+}
+
+
+@media all and (min-width: 670px){
+  .meal-item{
+    width: 20%;
+  }
+}

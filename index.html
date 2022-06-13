@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#212529">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--link for Font Awesome -->
+    <script src="https://kit.fontawesome.com/8c43ba49d3.js" crossorigin="anonymous"></script>
+
+    <!-- link for Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- link for local CSS file  -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Foodies</title>
+  </head>
+
+  
+  <body>
+
+    <!-- for navigation bar section -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <h2 id="title" class="navbar-brand mx-auto">Foodies</h2>
+        <a href="index.html" id="home-page-link" class="mx-auto">Home</a>
+        <a href="./favourite/favourite.html" id="favorite-meals-link" class="mx-auto"><i class="fa fa-heart"></i> Favourite Meals</a>
+      </div>
+    </nav>
+
+    <!-- for search container section -->
+    <main class="d-flex flex-column justify-content-around align-items-center">
+      <div class="search-container">
+        <input type="text" id="search-meal-input" placeholder="Search a meal">
+        <button type="submit" id="search-button" class="btn btn-sm btn-outline-dark">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+
+      <!-- for all the  meal item section -->
+      <div id="meal" class=" d-flex flex-wrap flex-row align-items-center justify-content-center">
+        <!-- structure of meal item -->
+        <!-- <div class = "meal-item">
+            <div class = "meal-img">
+              <img src = "food.jpg" alt = "food-img">
+            </div>
+            <div class = "meal-name">
+              <h3>Meal Name</h3>
+              <a href = "#" class = "recipe-button">Get Recipe</a>
+            </div>
+            <button type="submit" class="btn btn-sm btn-outline-primary favourite-button"> Add To Favourites </button>
+          </div> -->
+      </div>
+
+      <!-- Meal Details Page -->
+      <div id="meal-details">
+        <!-- Go Back Button -->
+        <button class="btn btn-sm btn-outline-danger back-button">
+          <i class="fas fa-times"></i>
+        </button>
+        <div id="meal-details-container">
+          <!-- Structure of meal Details -->
+          <!-- <h2 class = "recipe-title">Title of Meal</h2>
+                <div class = "recipe-instructions">
+                    <p>Intructions</p>
+                </div>
+                <div class = "recipe-meal-img">
+                    <img src = "" alt = "">
+                </div>
+                <div class = "recipe-link">
+                    <a href = "" target = "_blank">Watch Video</a>
+                </div> -->
+        </div>
+      </div>
+    </main>
+    <!-- link for Bootstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
+    <!-- link for local javascript file  -->
+    <script src="./script.js"></script>
+  </body>
+</html>
