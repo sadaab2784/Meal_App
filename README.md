@@ -5,6 +5,12 @@ This is Meals app Where you can know about your favourites meals. You can search
 # Hosted link:-
 https://sadaab2784.github.io/Meal_App/
 
+![Foodies](https://user-images.githubusercontent.com/106314415/199707080-95ac7fc2-8c93-4033-bc41-6703d964dff8.png)
+
+<br/>
+
+
+
 # Language used :- 
 Html, CSS and JavaScript . 
 # Functions:-
